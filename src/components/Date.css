@@ -1,0 +1,67 @@
+/* Custom CSS for Flatpickr inRange dates */
+.flatpickr-day.inRange,
+.flatpickr-day.selected:focus,
+.flatpickr-day.startRange:focus,
+.flatpickr-day.endRange:focus,
+.flatpickr-day.selected:focus:hover,
+.flatpickr-day.startRange:focus:hover,
+.flatpickr-day.endRange:focus:hover {
+
+  background: rgb(84,28,140) !important; /* Use !important to override default styles */
+  color: #fff !important; /* White text color */
+}
+
+/* If you want to maintain the purple background on hover for inRange dates */
+.flatpickr-day.inRange:hover {
+  background: rgb(84,28,140) !important; /* Slightly different purple shade for hover if desired */
+  color: #fff !important;
+}
+
+
+
+.flatpickr-day:hover {
+  background: rgb(84,28,140) !important; /* Or use the specific purple shade you prefer */
+  color: #fff !important; /* This is for the text color, white is common */
+}
+
+/* If you also want to change the color for the hovered date that is within the range */
+.flatpickr-day.inRange:hover,
+.flatpickr-day.startRange:hover,
+.flatpickr-day.endRange:hover,
+.flatpickr-day.selected:hover {
+  background: rgb(84,28,140) !important; /* Darker or lighter purple shade for hover effect */
+  color: #fff !important;
+}
+
+
+/* Override styles for selected dates */
+.flatpickr-calendar .flatpickr-day.selected, 
+.flatpickr-calendar .flatpickr-day.startRange, 
+.flatpickr-calendar .flatpickr-day.endRange,
+.flatpickr-calendar .flatpickr-day.selected.startRange, 
+.flatpickr-calendar .flatpickr-day.selected.endRange,
+.flatpickr-calendar .flatpickr-day.selected.inRange {
+  background: rgb(84,28,140) !important; /* Use your specific shade of purple */
+  color: #fff !important; /* White text color for better contrast */
+}
+
+/* Override styles for dates that are in the range but not selected */
+.flatpickr-calendar .flatpickr-day.inRange {
+  background: rgb(84,28,140) !important; /* Use a lighter or different shade of purple if you want to differentiate */
+  color: #fff !important; 
+}
+
+/* Override styles for date hover state */
+.flatpickr-calendar .flatpickr-day:hover {
+  background: rgb(84,28,140) !important; /* Slightly different purple shade for hover if desired */
+  color: #fff !important;
+}
+
+/* Ensure the hover state on selected and inRange dates is also purple */
+.flatpickr-calendar .flatpickr-day.selected:hover, 
+.flatpickr-calendar .flatpickr-day.inRange:hover,
+.flatpickr-calendar .flatpickr-day.startRange:hover, 
+.flatpickr-calendar .flatpickr-day.endRange:hover {
+  background: rgb(84,28,140) !important; /* Same shade of purple for consistency */
+  color: #fff !important;
+}
